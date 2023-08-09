@@ -7,23 +7,41 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1A17DA132A80B3CF00128808 /* OTPSignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A17DA122A80B3CF00128808 /* OTPSignUpViewController.swift */; };
 		1A1DA4A82A6916F5004B27ED /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A1DA4A72A6916F5004B27ED /* AppDelegate.swift */; };
 		1A1DA4AA2A6916F5004B27ED /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A1DA4A92A6916F5004B27ED /* SceneDelegate.swift */; };
-		1A1DA4AC2A6916F5004B27ED /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A1DA4AB2A6916F5004B27ED /* ViewController.swift */; };
 		1A1DA4AF2A6916F5004B27ED /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1A1DA4AD2A6916F5004B27ED /* Main.storyboard */; };
 		1A1DA4B12A6916F7004B27ED /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1A1DA4B02A6916F7004B27ED /* Assets.xcassets */; };
 		1A1DA4B42A6916F7004B27ED /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1A1DA4B22A6916F7004B27ED /* LaunchScreen.storyboard */; };
+		1A321A7C2A82445200799B25 /* ShadowButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A321A7B2A82445200799B25 /* ShadowButton.swift */; };
+		1A321A7E2A82492E00799B25 /* DOBTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A321A7D2A82492E00799B25 /* DOBTextField.swift */; };
+		1A321A802A825AFF00799B25 /* BasicTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A321A7F2A825AFF00799B25 /* BasicTextField.swift */; };
+		1A33CE7D2A7BB0D400154F7C /* UserInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A33CE7C2A7BB0D400154F7C /* UserInfoViewController.swift */; };
+		1A6355872A7F84A8006FF804 /* EmailSignInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A6355862A7F84A8006FF804 /* EmailSignInViewController.swift */; };
+		1A6355892A7F85AF006FF804 /* CreateAccountViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A6355882A7F85AF006FF804 /* CreateAccountViewController.swift */; };
+		1A977C652A7A4223008EE975 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A977C642A7A4223008EE975 /* LoginViewController.swift */; };
+		1A977C672A7A53AD008EE975 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A977C662A7A53AD008EE975 /* Extensions.swift */; };
+		1A977C692A7A6384008EE975 /* OTPViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A977C682A7A6384008EE975 /* OTPViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1A17DA122A80B3CF00128808 /* OTPSignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OTPSignUpViewController.swift; sourceTree = "<group>"; };
 		1A1DA4A42A6916F5004B27ED /* Binge Clone 2.0.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Binge Clone 2.0.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		1A1DA4A72A6916F5004B27ED /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1A1DA4A92A6916F5004B27ED /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		1A1DA4AB2A6916F5004B27ED /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		1A1DA4AE2A6916F5004B27ED /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		1A1DA4B02A6916F7004B27ED /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1A1DA4B32A6916F7004B27ED /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1A1DA4B52A6916F7004B27ED /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1A321A7B2A82445200799B25 /* ShadowButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShadowButton.swift; sourceTree = "<group>"; };
+		1A321A7D2A82492E00799B25 /* DOBTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DOBTextField.swift; sourceTree = "<group>"; };
+		1A321A7F2A825AFF00799B25 /* BasicTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BasicTextField.swift; sourceTree = "<group>"; };
+		1A33CE7C2A7BB0D400154F7C /* UserInfoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserInfoViewController.swift; sourceTree = "<group>"; };
+		1A6355862A7F84A8006FF804 /* EmailSignInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmailSignInViewController.swift; sourceTree = "<group>"; };
+		1A6355882A7F85AF006FF804 /* CreateAccountViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateAccountViewController.swift; sourceTree = "<group>"; };
+		1A977C642A7A4223008EE975 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		1A977C662A7A53AD008EE975 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		1A977C682A7A6384008EE975 /* OTPViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OTPViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -37,6 +55,67 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1A17DA142A80BB5D00128808 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		1A17DA162A80BB7E00128808 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				1A189BA12A821B6800455B98 /* Custom Components */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		1A17DA172A80BB8C00128808 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				1A17DA192A80BC4D00128808 /* Sign Up */,
+				1A17DA1A2A80BCF700128808 /* Sign In */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		1A17DA182A80BBA700128808 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				1A977C662A7A53AD008EE975 /* Extensions.swift */,
+			);
+			name = Extensions;
+			sourceTree = "<group>";
+		};
+		1A17DA192A80BC4D00128808 /* Sign Up */ = {
+			isa = PBXGroup;
+			children = (
+				1A17DA122A80B3CF00128808 /* OTPSignUpViewController.swift */,
+				1A977C682A7A6384008EE975 /* OTPViewController.swift */,
+				1A33CE7C2A7BB0D400154F7C /* UserInfoViewController.swift */,
+				1A6355882A7F85AF006FF804 /* CreateAccountViewController.swift */,
+			);
+			name = "Sign Up";
+			sourceTree = "<group>";
+		};
+		1A17DA1A2A80BCF700128808 /* Sign In */ = {
+			isa = PBXGroup;
+			children = (
+				1A6355862A7F84A8006FF804 /* EmailSignInViewController.swift */,
+			);
+			name = "Sign In";
+			sourceTree = "<group>";
+		};
+		1A189BA12A821B6800455B98 /* Custom Components */ = {
+			isa = PBXGroup;
+			children = (
+				1A321A7B2A82445200799B25 /* ShadowButton.swift */,
+				1A321A7F2A825AFF00799B25 /* BasicTextField.swift */,
+				1A321A7D2A82492E00799B25 /* DOBTextField.swift */,
+			);
+			name = "Custom Components";
+			sourceTree = "<group>";
+		};
 		1A1DA49B2A6916F5004B27ED = {
 			isa = PBXGroup;
 			children = (
@@ -58,7 +137,11 @@
 			children = (
 				1A1DA4A72A6916F5004B27ED /* AppDelegate.swift */,
 				1A1DA4A92A6916F5004B27ED /* SceneDelegate.swift */,
-				1A1DA4AB2A6916F5004B27ED /* ViewController.swift */,
+				1A977C642A7A4223008EE975 /* LoginViewController.swift */,
+				1A17DA142A80BB5D00128808 /* Models */,
+				1A17DA162A80BB7E00128808 /* Views */,
+				1A17DA172A80BB8C00128808 /* Controllers */,
+				1A17DA182A80BBA700128808 /* Extensions */,
 				1A1DA4AD2A6916F5004B27ED /* Main.storyboard */,
 				1A1DA4B02A6916F7004B27ED /* Assets.xcassets */,
 				1A1DA4B22A6916F7004B27ED /* LaunchScreen.storyboard */,
@@ -138,8 +221,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1A1DA4AC2A6916F5004B27ED /* ViewController.swift in Sources */,
+				1A6355892A7F85AF006FF804 /* CreateAccountViewController.swift in Sources */,
+				1A321A7C2A82445200799B25 /* ShadowButton.swift in Sources */,
+				1A33CE7D2A7BB0D400154F7C /* UserInfoViewController.swift in Sources */,
+				1A321A802A825AFF00799B25 /* BasicTextField.swift in Sources */,
+				1A977C672A7A53AD008EE975 /* Extensions.swift in Sources */,
+				1A17DA132A80B3CF00128808 /* OTPSignUpViewController.swift in Sources */,
 				1A1DA4A82A6916F5004B27ED /* AppDelegate.swift in Sources */,
+				1A977C652A7A4223008EE975 /* LoginViewController.swift in Sources */,
+				1A6355872A7F84A8006FF804 /* EmailSignInViewController.swift in Sources */,
+				1A977C692A7A6384008EE975 /* OTPViewController.swift in Sources */,
+				1A321A7E2A82492E00799B25 /* DOBTextField.swift in Sources */,
 				1A1DA4AA2A6916F5004B27ED /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -293,8 +385,7 @@
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -321,8 +412,7 @@
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
