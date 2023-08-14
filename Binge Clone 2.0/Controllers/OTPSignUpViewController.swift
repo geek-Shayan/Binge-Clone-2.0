@@ -8,6 +8,8 @@
 import UIKit
 
 class OTPSignUpViewController: UIViewController {
+    
+    static let identifier = "OTPSignUpViewController"
 
     @IBOutlet weak var gradientBackgroundImage: UIImageView!
     @IBOutlet weak var countryCodeTextField: BasicTextField!

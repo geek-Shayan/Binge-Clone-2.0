@@ -21,5 +21,9 @@
 			</array>
 		</dict>
 	</dict>
+	<key>NSSpeechRecognitionUsageDescription</key>
+	<string>you will be hacked!</string>
+	<key>NSMicrophoneUsageDescription</key>
+	<string>i can listen to you</string>
 </dict>
 </plist>

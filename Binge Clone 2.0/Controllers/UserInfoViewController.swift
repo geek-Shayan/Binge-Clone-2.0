@@ -9,6 +9,8 @@ import UIKit
 
 class UserInfoViewController: UIViewController {
     
+    static let identifier = "UserInfoViewController"
+    
     @IBOutlet weak var gradientBackgroundImage: UIImageView!
     @IBOutlet weak var nameTextField: BasicTextField!
     @IBOutlet weak var dobTextField: DOBTextField!
@@ -109,6 +111,8 @@ class UserInfoViewController: UIViewController {
     @IBAction func continuePressed(_ sender: Any) {
         if continueButton.isUserInteractionEnabled {
 //            HOME push
+            let vc = self.storyboard?.instantiateViewController(withIdentifier: "GenreViewController") as! GenreViewController
+            navigationController?.pushViewController(vc, animated: true)
         }
         else {
             print("continueButton disabled")

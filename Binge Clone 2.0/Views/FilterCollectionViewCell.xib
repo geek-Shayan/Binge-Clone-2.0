@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="FilterCollectionViewCell" customModule="Binge_Clone_2_0" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="118" height="28"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="118" height="28"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qYa-qZ-qgy">
+                        <rect key="frame" x="0.0" y="0.0" width="118" height="28"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleAspectFit" alignment="center" spacing="10" baselineRelativeArrangement="YES" translatesAutoresizingMaskIntoConstraints="NO" id="mvb-t8-dhn">
+                                <rect key="frame" x="10" y="0.0" width="98" height="28"/>
+                                <subviews>
+                                    <imageView opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Vector" translatesAutoresizingMaskIntoConstraints="NO" id="30a-Gd-yvX">
+                                        <rect key="frame" x="0.0" y="10" width="11" height="8"/>
+                                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="8" id="6ZS-cv-rVX"/>
+                                            <constraint firstAttribute="width" secondItem="30a-Gd-yvX" secondAttribute="height" multiplier="11:8" id="TfW-Qb-JaU"/>
+                                        </constraints>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qOy-kJ-36u">
+                                        <rect key="frame" x="21" y="7.0000000000000009" width="77" height="14.333333333333336"/>
+                                        <fontDescription key="fontDescription" type="system" weight="medium" pointSize="12"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="mvb-t8-dhn" secondAttribute="trailing" constant="10" id="6AZ-2x-V9v"/>
+                            <constraint firstItem="mvb-t8-dhn" firstAttribute="top" secondItem="qYa-qZ-qgy" secondAttribute="top" id="6yg-2o-z54"/>
+                            <constraint firstAttribute="bottom" secondItem="mvb-t8-dhn" secondAttribute="bottom" id="uQa-ve-DQS"/>
+                            <constraint firstItem="mvb-t8-dhn" firstAttribute="leading" secondItem="qYa-qZ-qgy" secondAttribute="leading" constant="10" id="xlx-fp-6gZ"/>
+                        </constraints>
+                    </view>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <constraints>
+                <constraint firstItem="qYa-qZ-qgy" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="LYR-mD-VP1"/>
+                <constraint firstItem="qYa-qZ-qgy" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="WQj-WI-N65"/>
+                <constraint firstAttribute="bottom" secondItem="qYa-qZ-qgy" secondAttribute="bottom" id="bi6-8f-Ga7"/>
+                <constraint firstAttribute="trailing" secondItem="qYa-qZ-qgy" secondAttribute="trailing" id="e09-N7-pwH"/>
+            </constraints>
+            <size key="customSize" width="118" height="28"/>
+            <connections>
+                <outlet property="filterBackgroundView" destination="qYa-qZ-qgy" id="ZMi-1n-2dT"/>
+                <outlet property="filterImage" destination="30a-Gd-yvX" id="qrN-Jp-Y55"/>
+                <outlet property="filterLabel" destination="qOy-kJ-36u" id="UQy-V2-Xa4"/>
+            </connections>
+            <point key="canvasLocation" x="68.702290076335871" y="-20.422535211267608"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="Vector" width="13.666666984558105" height="10"/>
+    </resources>
+</document>

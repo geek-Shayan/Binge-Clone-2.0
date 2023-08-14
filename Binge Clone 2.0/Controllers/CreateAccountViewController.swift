@@ -8,10 +8,10 @@
 import UIKit
 
 class CreateAccountViewController: UIViewController {
-
-    @IBOutlet weak var gradientBackgroundImage: UIImageView!
-
     
+    static let identifier = "CreateAccountViewController"
+    
+    @IBOutlet weak var gradientBackgroundImage: UIImageView!
     @IBOutlet weak var nameTextField: BasicTextField!
     @IBOutlet weak var dobTextField: DOBTextField!
     @IBOutlet weak var countryTextField: BasicTextField!
@@ -26,7 +26,6 @@ class CreateAccountViewController: UIViewController {
     @IBOutlet weak var viewConfirmPasswordButton: UIButton!
     
     @IBOutlet weak var signUpButton: ShadowButton!
-    
     @IBOutlet weak var signInButton: UIButton!
     
     
@@ -155,6 +154,8 @@ class CreateAccountViewController: UIViewController {
     @IBAction func signUpPressed(_ sender: Any) {
         if signUpButton.isUserInteractionEnabled {
 //            home push
+            let vc = self.storyboard?.instantiateViewController(withIdentifier: "GenreViewController") as! GenreViewController
+            navigationController?.pushViewController(vc, animated: true)
         }
         else {
             print("signUpButton disabled")

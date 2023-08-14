@@ -8,6 +8,8 @@
 import UIKit
 
 class EmailSignInViewController: UIViewController {
+    
+    static let identifier = "EmailSignInViewController"
 
     @IBOutlet weak var gradientBackgroundImage: UIImageView!
     @IBOutlet weak var emailTextField: BasicTextField!
@@ -93,6 +95,8 @@ class EmailSignInViewController: UIViewController {
     @IBAction func signInPressed(_ sender: Any) {
         if signInButton.isUserInteractionEnabled {
 //            home
+            let vc = self.storyboard?.instantiateViewController(withIdentifier: "GenreViewController") as! GenreViewController
+            navigationController?.pushViewController(vc, animated: true)
         }
         else {
             print("signInButton disabled")

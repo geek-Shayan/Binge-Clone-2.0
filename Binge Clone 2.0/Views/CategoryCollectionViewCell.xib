@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="CategoryCollectionViewCell" customModule="Binge_Clone_2_0" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="158" height="179"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="158" height="179"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="DO6-Po-hLb">
+                        <rect key="frame" x="0.0" y="0.0" width="158" height="179"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="DzE-yB-quj">
+                                <rect key="frame" x="0.0" y="0.0" width="158" height="179"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="DzE-yB-quj" secondAttribute="trailing" id="Wra-hm-PeJ"/>
+                            <constraint firstItem="DzE-yB-quj" firstAttribute="centerY" secondItem="DO6-Po-hLb" secondAttribute="centerY" id="XdC-yt-k5p"/>
+                            <constraint firstAttribute="bottom" secondItem="DzE-yB-quj" secondAttribute="bottom" id="ig3-m5-g4P"/>
+                            <constraint firstItem="DzE-yB-quj" firstAttribute="centerX" secondItem="DO6-Po-hLb" secondAttribute="centerX" id="r8O-AW-NKe"/>
+                            <constraint firstItem="DzE-yB-quj" firstAttribute="top" secondItem="DO6-Po-hLb" secondAttribute="top" id="tVL-eH-k6e"/>
+                            <constraint firstItem="DzE-yB-quj" firstAttribute="leading" secondItem="DO6-Po-hLb" secondAttribute="leading" id="zat-8U-1Vv"/>
+                        </constraints>
+                    </view>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <constraints>
+                <constraint firstItem="DO6-Po-hLb" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="Nn0-Ja-MeD"/>
+                <constraint firstAttribute="trailing" secondItem="DO6-Po-hLb" secondAttribute="trailing" id="O1r-WZ-Xyj"/>
+                <constraint firstAttribute="bottom" secondItem="DO6-Po-hLb" secondAttribute="bottom" id="RFl-RF-m7o"/>
+                <constraint firstItem="DO6-Po-hLb" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="zK1-Qv-goa"/>
+            </constraints>
+            <size key="customSize" width="158" height="179"/>
+            <connections>
+                <outlet property="categoryBackgroundView" destination="DO6-Po-hLb" id="3II-Aw-Cb4"/>
+                <outlet property="categoryImageView" destination="DzE-yB-quj" id="xQ3-90-yzg"/>
+            </connections>
+            <point key="canvasLocation" x="112.97709923664122" y="10.91549295774648"/>
+        </collectionViewCell>
+    </objects>
+</document>

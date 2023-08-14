@@ -8,12 +8,14 @@
 import UIKit
 
 class OTPViewController: UIViewController {
+    
+    static let identifier = "OTPViewController"
 
     @IBOutlet weak var gradientBackgroundImage: UIImageView!
-    @IBOutlet weak var otpTextField1: BasicTextField!
-    @IBOutlet weak var otpTextField2: BasicTextField!
-    @IBOutlet weak var otpTextField3: BasicTextField!
-    @IBOutlet weak var otpTextField4: BasicTextField!
+    @IBOutlet weak var otpTextField1: OTPTextField!
+    @IBOutlet weak var otpTextField2: OTPTextField!
+    @IBOutlet weak var otpTextField3: OTPTextField!
+    @IBOutlet weak var otpTextField4: OTPTextField!
     @IBOutlet weak var verifyButton: ShadowButton!
     
     private let maxLengthPhoneNumber = 1
@@ -35,29 +37,30 @@ class OTPViewController: UIViewController {
     private func setupView() {
         
         otpTextField1.delegate = self
+//        otpTextField1.addPadding(padding: .equalSpacing(0))
 //        otpTextField1.layer.borderWidth = 1
 //        otpTextField1.layer.cornerRadius = 8
 //        otpTextField1.layer.borderColor = UIColor(red: 1.0, green: 1.0, blue: 1.0, alpha: 1).cgColor
-        otpTextField1.textContentType = .oneTimeCode
+//        otpTextField1.textContentType = .oneTimeCode
 //        otpTextField1.becomeFirstResponder()
         
         otpTextField2.delegate = self
 //        otpTextField2.layer.borderWidth = 1
 //        otpTextField2.layer.cornerRadius = 8
 //        otpTextField2.layer.borderColor = UIColor(red: 1.0, green: 1.0, blue: 1.0, alpha: 1).cgColor
-        otpTextField2.textContentType = .oneTimeCode
+//        otpTextField2.textContentType = .oneTimeCode
         
         otpTextField3.delegate = self
 //        otpTextField3.layer.borderWidth = 1
 //        otpTextField3.layer.cornerRadius = 8
 //        otpTextField3.layer.borderColor = UIColor(red: 1.0, green: 1.0, blue: 1.0, alpha: 1).cgColor
-        otpTextField3.textContentType = .oneTimeCode
+//        otpTextField3.textContentType = .oneTimeCode
         
         otpTextField4.delegate = self
 //        otpTextField4.layer.borderWidth = 1
 //        otpTextField4.layer.cornerRadius = 8
 //        otpTextField4.layer.borderColor = UIColor(red: 1.0, green: 1.0, blue: 1.0, alpha: 1).cgColor
-        otpTextField4.textContentType = .oneTimeCode
+//        otpTextField4.textContentType = .oneTimeCode
         
 //        verifyButton.isUserInteractionEnabled = false
 //        verifyButton.layer.backgroundColor = UIColor(red: 0.427, green: 0.431, blue: 0.431, alpha: 1).cgColor // gray
