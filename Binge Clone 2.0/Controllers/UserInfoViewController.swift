@@ -17,93 +17,64 @@ class UserInfoViewController: UIViewController {
     @IBOutlet weak var countryTextField: BasicTextField!
     @IBOutlet weak var cityTextField: BasicTextField!
     @IBOutlet weak var areaTextField: BasicTextField!
+    
     @IBOutlet weak var continueButton: ShadowButton!
     
-//    private let datePicker = UIDatePicker()
-//    private let dateFormatter = DateFormatter()
+    
+    let countries = ["bd", "india", "kenya"]
+    let cities = ["dhaka", "khulna", "rajshahi"]
+    let areas = ["south", "north"]
+    
+    let countryPickerView = UIPickerView()
+    let cityPickerView = UIPickerView()
+    let areaPickerView = UIPickerView()
+
     
     override func viewDidLoad() {
         super.viewDidLoad()
 
         setupView()
         
-//        createDatePicker()
-        
         dismissKeyboard()
     }
     
     private func setupView() {
-        
         nameTextField.delegate = self
-
-//        nameTextField.layer.borderWidth = 1
-//        nameTextField.layer.cornerRadius = 8
-//        nameTextField.layer.borderColor = UIColor(red: 1.0, green: 1.0, blue: 1.0, alpha: 1).cgColor
-//        nameTextField.addPadding(padding: .equalSpacing(30))
-        
         dobTextField.delegate = self
-//        dobTextField.layer.borderWidth = 1
-//        dobTextField.layer.cornerRadius = 8
-//        dobTextField.layer.borderColor = UIColor(red: 1.0, green: 1.0, blue: 1.0, alpha: 1).cgColor
-//        dobTextField.addPadding(padding: .equalSpacing(14))
-        
-//        dateFormatter.dateStyle = .medium
-//        dateFormatter.dateFormat = "dd/MM/yyyy"
-//
-//        dateFormatter.timeStyle = .none
         
         countryTextField.delegate = self
-//        countryTextField.layer.borderWidth = 1
-//        countryTextField.layer.cornerRadius = 8
-//        countryTextField.layer.borderColor = UIColor(red: 1.0, green: 1.0, blue: 1.0, alpha: 1).cgColor
-//        countryTextField.addPadding(padding: .equalSpacing(14))
+        countryTextField.inputView = countryPickerView
         
         cityTextField.delegate = self
-//        cityTextField.layer.borderWidth = 1
-//        cityTextField.layer.cornerRadius = 8
-//        cityTextField.layer.borderColor = UIColor(red: 1.0, green: 1.0, blue: 1.0, alpha: 1).cgColor
-//        cityTextField.addPadding(padding: .equalSpacing(14))
-        
+        cityTextField.inputView = cityPickerView
+
         areaTextField.delegate = self
-//        areaTextField.layer.borderWidth = 1
-//        areaTextField.layer.cornerRadius = 8
-//        areaTextField.layer.borderColor = UIColor(red: 1.0, green: 1.0, blue: 1.0, alpha: 1).cgColor
-//        areaTextField.addPadding(padding: .equalSpacing(14))
+        areaTextField.inputView = areaPickerView
         
-//        continueButton.isUserInteractionEnabled = false
-//        continueButton.layer.backgroundColor = UIColor(red: 0.427, green: 0.431, blue: 0.431, alpha: 1).cgColor // gray
+        countryPickerView.delegate = self
+        cityPickerView.delegate = self
+        areaPickerView.delegate = self
+        
+        countryPickerView.dataSource = self
+        cityPickerView.dataSource = self
+        areaPickerView.dataSource = self
+        
+        countryPickerView.tag = 0
+        cityPickerView.tag = 1
+        areaPickerView.tag = 2
+        
         continueButton.disabled()
         
     }
-    
-    
-//    private func createDatePicker() {
-//        datePicker.preferredDatePickerStyle = .inline
-//        datePicker.datePickerMode = .date
-//
-//        dobTextField.inputView = datePicker
-//        datePicker.addTarget(self, action: #selector(dateSelected), for: .valueChanged)
-//    }
-//
-//    @objc func dateSelected() {
-////        dobTextField.text = dateFormatter.string(from: datePicker.date)
-//        dobTextField.text = dateFormatter.string(from: datePicker.date) as String
-//        self.view.endEditing(true)
-//    }
-
     
     private func inputValidation() {
         if nameTextField.text?.isEmpty == false {
             gradientBackgroundImage.image = UIImage(named: "Rectangle 161 (3)")
             continueButton.enabled()
-//            continueButton.layer.backgroundColor = UIColor(red: 0.91, green: 0.204, blue: 0.192, alpha: 1).cgColor // red
-//            continueButton.isUserInteractionEnabled = true
         }
         else {
             gradientBackgroundImage.image = UIImage(named: "Rectangle 161")
             continueButton.disabled()
-//            continueButton.layer.backgroundColor = UIColor(red: 0.427, green: 0.431, blue: 0.431, alpha: 1).cgColor // gray
-//            continueButton.isUserInteractionEnabled = false
         }
     }
 
@@ -130,5 +101,63 @@ extension UserInfoViewController: UITextFieldDelegate {
         inputValidation()
     }
 
+    
+}
+
+
+extension UserInfoViewController: UIPickerViewDelegate {
+    
+}
+
+
+extension UserInfoViewController: UIPickerViewDataSource {
+    func numberOfComponents(in pickerView: UIPickerView) -> Int {
+        return 1
+    }
+    
+    func pickerView(_ pickerView: UIPickerView, numberOfRowsInComponent component: Int) -> Int {
+        switch pickerView.tag {
+        case 0:
+            return countries.count
+        case 1:
+            return cities.count
+        case 2:
+            return areas.count
+        default:
+            return 0
+        }
+    }
+    
+    func pickerView(_ pickerView: UIPickerView, titleForRow row: Int, forComponent component: Int) -> String? {
+        switch pickerView.tag {
+        case 0:
+            return countries[row]
+        case 1:
+            return cities[row]
+        case 2:
+            return areas[row]
+        default:
+            return "Data Not Found"
+        }
+    }
+    
+    func pickerView(_ pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
+        switch pickerView.tag {
+        case 0:
+            countryTextField.text = countries[row]
+            cityTextField.text = nil
+            areaTextField.text = nil
+        case 1:
+            cityTextField.text = cities[row]
+            areaTextField.text = nil
+        case 2:
+            areaTextField.text = areas[row]
+        default:
+            countryTextField.text = nil
+            cityTextField.text = nil
+            areaTextField.text = nil
+            
+        }
+    }
     
 }

@@ -51,6 +51,7 @@ class DOBTextField: UITextField {
     private func createDatePicker() {
         datePicker.preferredDatePickerStyle = .inline
         datePicker.datePickerMode = .date
+        datePicker.tintColor = .red
         
         inputView = datePicker
 //        inputAccessoryView = createToolbar()
