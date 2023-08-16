@@ -101,29 +101,66 @@
                                     <action selector="termSeletionPressed:" destination="zwt-aS-Nk2" eventType="touchUpInside" id="qRR-Fp-dtq"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="252" usesAttributedText="YES" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OrM-5j-W7d">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="252" usesAttributedText="YES" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OrM-5j-W7d" customClass="TermsAndConditionsLabel" customModule="Binge_Clone_2_0" customModuleProvider="target">
                                 <rect key="frame" x="59" y="564" width="305" height="21.666666666666629"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="21.670000000000002" id="lMF-fp-aiv"/>
                                 </constraints>
                                 <attributedString key="attributedText">
-                                    <fragment content="By continuing I agree to the Privacy Notice and ">
+                                    <fragment content="By continuing I agree to the ">
                                         <attributes>
-                                            <color key="NSColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                            <color key="NSColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <font key="NSFont" metaFont="miniSystem"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment content="Privacy Notice">
+                                        <attributes>
+                                            <color key="NSColor" red="0.90980392156862744" green="0.20392156862745098" blue="0.19215686274509802" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <font key="NSFont" metaFont="miniSystem"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                            <integer key="NSUnderline" value="1"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment content=" ">
+                                        <attributes>
+                                            <color key="NSColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                                            <font key="NSFont" metaFont="miniSystem"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment content="and">
+                                        <attributes>
+                                            <color key="NSColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <font key="NSFont" metaFont="miniSystem"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment content=" ">
+                                        <attributes>
+                                            <color key="NSColor" name="textColor" catalog="System" colorSpace="catalog"/>
                                             <font key="NSFont" metaFont="miniSystem"/>
                                             <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
                                         </attributes>
                                     </fragment>
                                     <fragment content="Terms and conditions">
                                         <attributes>
-                                            <color key="NSColor" red="0.90980392156862744" green="0.20392156862745098" blue="0.19215686274509802" alpha="1" colorSpace="calibratedRGB"/>
+                                            <color key="NSColor" red="0.90980392156862744" green="0.20392156862745098" blue="0.19215686274509802" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <font key="NSFont" metaFont="miniSystem"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                            <integer key="NSUnderline" value="1"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment content=" ">
+                                        <attributes>
+                                            <color key="NSColor" name="textColor" catalog="System" colorSpace="catalog"/>
                                             <font key="NSFont" metaFont="miniSystem"/>
                                             <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
                                         </attributes>
                                     </fragment>
-                                    <fragment content=" of BINGE">
+                                    <fragment content="of BINGE">
                                         <attributes>
-                                            <color key="NSColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                            <color key="NSColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                             <font key="NSFont" metaFont="miniSystem"/>
                                             <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
                                         </attributes>
@@ -270,8 +307,8 @@
                         <outlet property="googleSignInButton" destination="I5F-m5-nfV" id="c4G-t7-4SW"/>
                         <outlet property="gradientBackgroundImage" destination="3kI-xU-ZWq" id="zgD-Dh-q75"/>
                         <outlet property="phoneNumberTextField" destination="Cav-Fv-7kE" id="hf5-BK-Ycw"/>
-                        <outlet property="termLinkedLabel" destination="OrM-5j-W7d" id="sUz-Mw-GMi"/>
                         <outlet property="termSeletionButton" destination="ezJ-KE-093" id="wrL-cs-91Y"/>
+                        <outlet property="termsAndConditionsLabel" destination="OrM-5j-W7d" id="TEc-cm-Me3"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Q6a-NJ-t66" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -1227,11 +1264,12 @@ Password</string>
                                             <action selector="signUpPressed:" destination="GYv-P3-DKk" eventType="touchUpInside" id="B2z-Wn-J9Z"/>
                                         </connections>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Y4Z-cz-Md2">
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Y4Z-cz-Md2">
                                         <rect key="frame" x="81" y="792" width="231" height="16"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="16" id="ofp-99-2Xv"/>
                                         </constraints>
+                                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                         <state key="normal">
                                             <attributedString key="attributedTitle">
@@ -1337,7 +1375,7 @@ Password</string>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <datePicker contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="dateAndTime" minuteInterval="1" translatesAutoresizingMaskIntoConstraints="NO" id="WCF-b5-S53">
-                                <rect key="frame" x="-2" y="370" width="393" height="112"/>
+                                <rect key="frame" x="-3" y="370" width="393" height="112"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
                             </datePicker>
                         </subviews>
@@ -1961,7 +1999,7 @@ Password</string>
                                 </constraints>
                             </view>
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="hFB-6u-Z2F">
-                                <rect key="frame" x="49" y="131.33333333333331" width="295" height="588.66666666666652"/>
+                                <rect key="frame" x="49" y="131.33333333333331" width="295" height="588.66666666666674"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="295" id="hgM-tQ-e9l"/>
@@ -2130,6 +2168,110 @@ Password</string>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="XHr-0h-KI8" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="9023.6641221374048" y="2234.5070422535214"/>
+        </scene>
+        <!--Privacy Policy View Controller-->
+        <scene sceneID="xl2-je-3uP">
+            <objects>
+                <viewController storyboardIdentifier="PrivacyPolicyViewController" id="g53-tH-Guk" customClass="PrivacyPolicyViewController" customModule="Binge_Clone_2_0" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="gSS-Wl-0lC">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Privacy Policy" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9CI-OS-T1Z">
+                                <rect key="frame" x="16" y="91" width="361" height="28.666666666666671"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="24"/>
+                                <color key="textColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="justified" translatesAutoresizingMaskIntoConstraints="NO" id="kFL-62-hcs">
+                                <rect key="frame" x="16" y="151.66666666666669" width="361" height="700.33333333333326"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <mutableString key="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam tortor risus, interdum sit amet volutpat in, aliquet at tellus. Pellentesque tincidunt pharetra metus eu lobortis. Praesent pretium in leo congue gravida. Vivamus mollis felis eu purus lobortis mattis. Phasellus sed porta elit. Duis ac nibh nec odio dapibus sodales. Aliquam venenatis mi at pretium convallis. Mauris eget massa sit amet nulla placerat iaculis. Phasellus tincidunt sodales nisl non elementum. Praesent accumsan bibendum quam, id finibus est bibendum nec. Integer vel orci finibus, volutpat purus vitae, euismod mi. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Nam at massa faucibus, cursus tellus eu, mattis dui. Pellentesque quis ante nibh. Proin ultrices viverra nulla ut scelerisque. Nunc auctor, lorem in vehicula porttitor, turpis tortor ultrices dolor, quis consectetur lorem leo non nisl.
+
+Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Vestibulum vitae magna in massa dignissim pretium. Fusce eget congue velit, vitae varius orci. Donec feugiat vel lorem in consectetur. Integer rhoncus laoreet elit a ultricies. Suspendisse pellentesque pretium metus, id pretium dui laoreet at. Cras ligula orci, consequat ut pellentesque a, egestas ultricies arcu. Etiam a turpis quis felis scelerisque dignissim ut ut nisi. In eget fermentum augue, quis rhoncus enim. Aliquam interdum sodales semper. Nunc a sagittis mi.
+
+Vivamus vulputate dolor convallis, porta tortor a, sodales turpis. Vestibulum ut mi aliquet, eleifend urna vel, faucibus nulla. Suspendisse consequat porttitor nisi a accumsan. Curabitur iaculis interdum eros eu aliquam. Cras feugiat orci eros, quis imperdiet magna dictum sit amet. In eget tellus vel risus ornare porttitor. In viverra convallis nulla, ut pretium enim tincidunt sit amet. Ut lacus mauris, malesuada eget turpis quis, efficitur congue ipsum. Maecenas eu porta velit. Donec ut velit mollis, accumsan metus quis, fermentum quam. Nullam eget nibh vestibulum, rutrum libero sed, venenatis lectus.
+
+Cras ut sapien at justo tincidunt condimentum vitae sit amet erat. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Nam congue mattis ipsum quis sodales. Fusce vestibulum, diam non ultrices eleifend, ligula ligula molestie sem, ac tristique ante sem in elit. In sit amet condimentum justo. Phasellus ullamcorper, est sit amet dapibus tristique, ex nibh mollis leo, id consectetur nisl risus sit amet massa. Fusce quis blandit odio, nec condimentum quam. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Nulla sollicitudin ut nisl molestie dignissim. Quisque sit amet rutrum dolor.
+
+Curabitur consectetur congue urna nec tincidunt. Duis faucibus ipsum quam, a finibus enim iaculis quis. Sed risus arcu, ultrices quis congue et, consequat eget velit. Fusce tempus, sem nec hendrerit condimentum, mi lacus lacinia diam, eget facilisis mi turpis dignissim mauris. Mauris egestas ligula nec lectus volutpat, nec rutrum libero ultrices. Proin vehicula, enim nec hendrerit vehicula, turpis eros egestas diam, interdum aliquet enim libero ut dolor. Maecenas ac porttitor nunc. Nulla facilisi. Curabitur commodo cursus mauris, et ultricies sem semper viverra. Nam sollicitudin velit eget nisi viverra, fermentum pharetra enim congue. Nam tempor, leo vel facilisis fermentum, nisi mi fringilla nisl, vitae tristique orci velit in purus. Maecenas in aliquet sapien, eget pellentesque metus. Maecenas luctus at eros in malesuada. Phasellus lacus metus, fringilla id nisi sit amet, suscipit sollicitudin ligula.</mutableString>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="TF9-sv-fNY"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.59999999999999998" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="kFL-62-hcs" firstAttribute="top" secondItem="9CI-OS-T1Z" secondAttribute="bottom" constant="32" id="2FU-2a-qIj"/>
+                            <constraint firstItem="9CI-OS-T1Z" firstAttribute="top" secondItem="TF9-sv-fNY" secondAttribute="top" constant="32" id="4ft-Ht-ZGr"/>
+                            <constraint firstAttribute="bottom" secondItem="kFL-62-hcs" secondAttribute="bottom" id="LCT-1D-nVV"/>
+                            <constraint firstItem="TF9-sv-fNY" firstAttribute="trailing" secondItem="kFL-62-hcs" secondAttribute="trailing" constant="16" id="WI0-1W-Xep"/>
+                            <constraint firstItem="TF9-sv-fNY" firstAttribute="trailing" secondItem="9CI-OS-T1Z" secondAttribute="trailing" constant="16" id="gAm-hq-f0v"/>
+                            <constraint firstItem="kFL-62-hcs" firstAttribute="leading" secondItem="TF9-sv-fNY" secondAttribute="leading" constant="16" id="mZi-nA-Rj6"/>
+                            <constraint firstItem="9CI-OS-T1Z" firstAttribute="leading" secondItem="TF9-sv-fNY" secondAttribute="leading" constant="16" id="wSx-DT-8E6"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="textView" destination="kFL-62-hcs" id="Zdi-K6-asc"/>
+                        <outlet property="titleLabel" destination="9CI-OS-T1Z" id="kyj-9r-1xy"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="fhG-0u-v2J" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1909" y="656"/>
+        </scene>
+        <!--Terms And Conditions View Controller-->
+        <scene sceneID="4VB-qL-2ml">
+            <objects>
+                <viewController storyboardIdentifier="TermsAndConditionsViewController" id="xEa-my-9jb" customClass="TermsAndConditionsViewController" customModule="Binge_Clone_2_0" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="0IY-eU-F2p">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Terms and Conditions" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zFv-16-fCM">
+                                <rect key="frame" x="16" y="91" width="361" height="28.666666666666671"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="24"/>
+                                <color key="textColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="justified" translatesAutoresizingMaskIntoConstraints="NO" id="MKZ-NF-h4z">
+                                <rect key="frame" x="16" y="151.66666666666669" width="361" height="700.33333333333326"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <mutableString key="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam tortor risus, interdum sit amet volutpat in, aliquet at tellus. Pellentesque tincidunt pharetra metus eu lobortis. Praesent pretium in leo congue gravida. Vivamus mollis felis eu purus lobortis mattis. Phasellus sed porta elit. Duis ac nibh nec odio dapibus sodales. Aliquam venenatis mi at pretium convallis. Mauris eget massa sit amet nulla placerat iaculis. Phasellus tincidunt sodales nisl non elementum. Praesent accumsan bibendum quam, id finibus est bibendum nec. Integer vel orci finibus, volutpat purus vitae, euismod mi. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Nam at massa faucibus, cursus tellus eu, mattis dui. Pellentesque quis ante nibh. Proin ultrices viverra nulla ut scelerisque. Nunc auctor, lorem in vehicula porttitor, turpis tortor ultrices dolor, quis consectetur lorem leo non nisl.
+
+Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Vestibulum vitae magna in massa dignissim pretium. Fusce eget congue velit, vitae varius orci. Donec feugiat vel lorem in consectetur. Integer rhoncus laoreet elit a ultricies. Suspendisse pellentesque pretium metus, id pretium dui laoreet at. Cras ligula orci, consequat ut pellentesque a, egestas ultricies arcu. Etiam a turpis quis felis scelerisque dignissim ut ut nisi. In eget fermentum augue, quis rhoncus enim. Aliquam interdum sodales semper. Nunc a sagittis mi.
+
+Vivamus vulputate dolor convallis, porta tortor a, sodales turpis. Vestibulum ut mi aliquet, eleifend urna vel, faucibus nulla. Suspendisse consequat porttitor nisi a accumsan. Curabitur iaculis interdum eros eu aliquam. Cras feugiat orci eros, quis imperdiet magna dictum sit amet. In eget tellus vel risus ornare porttitor. In viverra convallis nulla, ut pretium enim tincidunt sit amet. Ut lacus mauris, malesuada eget turpis quis, efficitur congue ipsum. Maecenas eu porta velit. Donec ut velit mollis, accumsan metus quis, fermentum quam. Nullam eget nibh vestibulum, rutrum libero sed, venenatis lectus.
+
+Cras ut sapien at justo tincidunt condimentum vitae sit amet erat. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Nam congue mattis ipsum quis sodales. Fusce vestibulum, diam non ultrices eleifend, ligula ligula molestie sem, ac tristique ante sem in elit. In sit amet condimentum justo. Phasellus ullamcorper, est sit amet dapibus tristique, ex nibh mollis leo, id consectetur nisl risus sit amet massa. Fusce quis blandit odio, nec condimentum quam. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Nulla sollicitudin ut nisl molestie dignissim. Quisque sit amet rutrum dolor.
+
+Curabitur consectetur congue urna nec tincidunt. Duis faucibus ipsum quam, a finibus enim iaculis quis. Sed risus arcu, ultrices quis congue et, consequat eget velit. Fusce tempus, sem nec hendrerit condimentum, mi lacus lacinia diam, eget facilisis mi turpis dignissim mauris. Mauris egestas ligula nec lectus volutpat, nec rutrum libero ultrices. Proin vehicula, enim nec hendrerit vehicula, turpis eros egestas diam, interdum aliquet enim libero ut dolor. Maecenas ac porttitor nunc. Nulla facilisi. Curabitur commodo cursus mauris, et ultricies sem semper viverra. Nam sollicitudin velit eget nisi viverra, fermentum pharetra enim congue. Nam tempor, leo vel facilisis fermentum, nisi mi fringilla nisl, vitae tristique orci velit in purus. Maecenas in aliquet sapien, eget pellentesque metus. Maecenas luctus at eros in malesuada. Phasellus lacus metus, fringilla id nisi sit amet, suscipit sollicitudin ligula.</mutableString>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="X3j-LD-KdA"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.59999999999999998" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="zFv-16-fCM" firstAttribute="top" secondItem="X3j-LD-KdA" secondAttribute="top" constant="32" id="29H-rF-PKR"/>
+                            <constraint firstItem="MKZ-NF-h4z" firstAttribute="leading" secondItem="X3j-LD-KdA" secondAttribute="leading" constant="16" id="7uC-eQ-5aD"/>
+                            <constraint firstAttribute="bottom" secondItem="MKZ-NF-h4z" secondAttribute="bottom" id="GRj-wD-qsF"/>
+                            <constraint firstItem="MKZ-NF-h4z" firstAttribute="top" secondItem="zFv-16-fCM" secondAttribute="bottom" constant="32" id="NeD-az-eWG"/>
+                            <constraint firstItem="zFv-16-fCM" firstAttribute="leading" secondItem="X3j-LD-KdA" secondAttribute="leading" constant="16" id="cA0-i3-vJf"/>
+                            <constraint firstItem="X3j-LD-KdA" firstAttribute="trailing" secondItem="MKZ-NF-h4z" secondAttribute="trailing" constant="16" id="kyK-3R-dFV"/>
+                            <constraint firstItem="X3j-LD-KdA" firstAttribute="trailing" secondItem="zFv-16-fCM" secondAttribute="trailing" constant="16" id="l92-yv-79t"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="textView" destination="MKZ-NF-h4z" id="WEz-KH-A2u"/>
+                        <outlet property="titleLabel" destination="zFv-16-fCM" id="Poh-ih-gMS"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="3sN-Il-NTY" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2700" y="656"/>
         </scene>
     </scenes>
     <resources>

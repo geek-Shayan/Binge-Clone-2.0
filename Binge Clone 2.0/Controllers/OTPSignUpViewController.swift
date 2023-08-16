@@ -15,7 +15,7 @@ class OTPSignUpViewController: UIViewController {
     @IBOutlet weak var countryCodeTextField: BasicTextField!
     @IBOutlet weak var phoneNumberTextField: BasicTextField!
     @IBOutlet weak var termSeletionButton: UIButton!
-    @IBOutlet weak var termLinkedLabel: UILabel!
+    @IBOutlet weak var termsAndConditionsLabel: TermsAndConditionsLabel!
     @IBOutlet weak var continueButton: ShadowButton!
     
     @IBOutlet weak var facebookSignInButton: UIButton!
@@ -57,20 +57,22 @@ class OTPSignUpViewController: UIViewController {
         termSeletionButton.setImage(UIImage(named: "Ellipse 5"), for: .normal)
         termSeletionButton.setImage(UIImage(named: "Ellipse 5 (3)"), for: .selected)
         
+        termsAndConditionsLabel.privacyTapped = {
+            //show privacy policy
+            let vc = self.storyboard?.instantiateViewController(withIdentifier: PrivacyPolicyViewController.identifier) as! PrivacyPolicyViewController
+            self.present(vc, animated: true)
+        }
+        
+        termsAndConditionsLabel.termsTapped = {
+            //show terms and conditions
+            let vc = self.storyboard?.instantiateViewController(withIdentifier: TermsAndConditionsViewController.identifier) as! TermsAndConditionsViewController
+            self.present(vc, animated: true)
+        }
+
+        
 //        continueButton.isUserInteractionEnabled = false
 //        continueButton.layer.backgroundColor = UIColor(red: 0.427, green: 0.431, blue: 0.431, alpha: 1).cgColor // gray
         continueButton.disabled()
-        
-
-        
-//        let attributedString = NSMutableAttributedString(string:"I love stackoverflow!")
-//        attributedString.addAttributes(range: <#T##NSRange#>)
-////        let linkWasSet = attributedString.setAsLink(textToFind: "stackoverflow", linkURL: "https://www.google.com/")
-//
-//        if linkWasSet {
-//            // adjust more attributedString properties
-//            termLinkedLabel.attributedText = attributedString
-//        }
         
     }
     

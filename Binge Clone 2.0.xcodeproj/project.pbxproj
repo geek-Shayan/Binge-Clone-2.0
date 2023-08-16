@@ -60,6 +60,9 @@
 		1A33E1D72A84F2F40008FC9F /* TVCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A33E1D52A84F2F40008FC9F /* TVCollectionViewCell.swift */; };
 		1A33E1D82A84F2F40008FC9F /* TVCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1A33E1D62A84F2F40008FC9F /* TVCollectionViewCell.xib */; };
 		1A497EB52A8A243600D49C78 /* OTPTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A497EB42A8A243600D49C78 /* OTPTextField.swift */; };
+		1A5E2F442A8C97AF001A91DA /* TermsAndConditionsLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A5E2F432A8C97AF001A91DA /* TermsAndConditionsLabel.swift */; };
+		1A5E2F462A8CB416001A91DA /* TermsAndConditionsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A5E2F452A8CB416001A91DA /* TermsAndConditionsViewController.swift */; };
+		1A5E2F482A8CB495001A91DA /* PrivacyPolicyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A5E2F472A8CB495001A91DA /* PrivacyPolicyViewController.swift */; };
 		1A6355872A7F84A8006FF804 /* EmailSignInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A6355862A7F84A8006FF804 /* EmailSignInViewController.swift */; };
 		1A6355892A7F85AF006FF804 /* CreateAccountViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A6355882A7F85AF006FF804 /* CreateAccountViewController.swift */; };
 		1A977C672A7A53AD008EE975 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A977C662A7A53AD008EE975 /* Extensions.swift */; };
@@ -122,6 +125,9 @@
 		1A33E1D52A84F2F40008FC9F /* TVCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TVCollectionViewCell.swift; sourceTree = "<group>"; };
 		1A33E1D62A84F2F40008FC9F /* TVCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TVCollectionViewCell.xib; sourceTree = "<group>"; };
 		1A497EB42A8A243600D49C78 /* OTPTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OTPTextField.swift; sourceTree = "<group>"; };
+		1A5E2F432A8C97AF001A91DA /* TermsAndConditionsLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TermsAndConditionsLabel.swift; sourceTree = "<group>"; };
+		1A5E2F452A8CB416001A91DA /* TermsAndConditionsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TermsAndConditionsViewController.swift; sourceTree = "<group>"; };
+		1A5E2F472A8CB495001A91DA /* PrivacyPolicyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrivacyPolicyViewController.swift; sourceTree = "<group>"; };
 		1A6355862A7F84A8006FF804 /* EmailSignInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmailSignInViewController.swift; sourceTree = "<group>"; };
 		1A6355882A7F85AF006FF804 /* CreateAccountViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateAccountViewController.swift; sourceTree = "<group>"; };
 		1A977C662A7A53AD008EE975 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
@@ -193,6 +199,8 @@
 				1A977C682A7A6384008EE975 /* OTPViewController.swift */,
 				1A33CE7C2A7BB0D400154F7C /* UserInfoViewController.swift */,
 				1A6355882A7F85AF006FF804 /* CreateAccountViewController.swift */,
+				1A5E2F472A8CB495001A91DA /* PrivacyPolicyViewController.swift */,
+				1A5E2F452A8CB416001A91DA /* TermsAndConditionsViewController.swift */,
 			);
 			name = "Sign Up";
 			sourceTree = "<group>";
@@ -208,6 +216,7 @@
 		1A189BA12A821B6800455B98 /* Custom Components */ = {
 			isa = PBXGroup;
 			children = (
+				1A5E2F432A8C97AF001A91DA /* TermsAndConditionsLabel.swift */,
 				1A321A7B2A82445200799B25 /* ShadowButton.swift */,
 				1A321A7F2A825AFF00799B25 /* BasicTextField.swift */,
 				1A497EB42A8A243600D49C78 /* OTPTextField.swift */,
@@ -405,6 +414,7 @@
 				1A33E1C52A84EA8D0008FC9F /* GenreCollectionViewCell.swift in Sources */,
 				1A33E17F2A84A0930008FC9F /* LiveTvSectionsData.swift in Sources */,
 				1A33E1952A84AEA50008FC9F /* CategoriesViewController.swift in Sources */,
+				1A5E2F462A8CB416001A91DA /* TermsAndConditionsViewController.swift in Sources */,
 				1A33E1792A849FD00008FC9F /* Actions.swift in Sources */,
 				1A6355872A7F84A8006FF804 /* EmailSignInViewController.swift in Sources */,
 				1A33E1712A849F2D0008FC9F /* SupplementaryDataType.swift in Sources */,
@@ -422,7 +432,9 @@
 				1A33E1932A84AE140008FC9F /* GenreViewController.swift in Sources */,
 				1A33E1A12A84D0F90008FC9F /* HeaderCollectionReusableView.swift in Sources */,
 				1A321A7E2A82492E00799B25 /* DOBTextField.swift in Sources */,
+				1A5E2F442A8C97AF001A91DA /* TermsAndConditionsLabel.swift in Sources */,
 				1A1DA4AA2A6916F5004B27ED /* SceneDelegate.swift in Sources */,
+				1A5E2F482A8CB495001A91DA /* PrivacyPolicyViewController.swift in Sources */,
 				1A33E1BD2A84E69A0008FC9F /* FilterCollectionViewCell.swift in Sources */,
 				1A33E1852A84A1310008FC9F /* ActionsData.swift in Sources */,
 			);
