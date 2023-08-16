@@ -32,10 +32,6 @@ class FilterCollectionViewCell: UICollectionViewCell {
         filterBackgroundView.layer.borderColor = UIColor(red: 0.2, green: 0.2, blue: 0.2, alpha: 1).cgColor  //gray
         
         filterImage.isHidden = false
-        
-//        filterLabel.translatesAutoresizingMaskIntoConstraints = false
-//        filterImage.translatesAutoresizingMaskIntoConstraints = false
-        
     }
     
     func selected() {
@@ -43,8 +39,6 @@ class FilterCollectionViewCell: UICollectionViewCell {
         filterBackgroundView.layer.borderWidth = 0
         
         filterImage.isHidden = false
-//        layoutSubviews()
-//        layoutIfNeeded()
     }
     
     func deSelected() {
@@ -52,8 +46,6 @@ class FilterCollectionViewCell: UICollectionViewCell {
         filterBackgroundView.layer.borderWidth = 1
         
         filterImage.isHidden = true
-//        layoutSubviews()
-//        layoutIfNeeded()
     }
 
     

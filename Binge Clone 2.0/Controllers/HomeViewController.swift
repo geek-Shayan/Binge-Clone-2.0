@@ -13,7 +13,6 @@ class HomeViewController: UIViewController {
     static let headerKind = "headerKind"
     static let footerKind = "footerKind"
 
-
     private let collectionView: UICollectionView = {
 
         let layout = UICollectionViewCompositionalLayout { sectionNumber, env in

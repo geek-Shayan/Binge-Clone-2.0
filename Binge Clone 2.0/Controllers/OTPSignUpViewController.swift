@@ -41,18 +41,7 @@ class OTPSignUpViewController: UIViewController {
     private func setupView() {
         
         countryCodeTextField.delegate = self
-        
-//        countryCodeTextField.layer.borderWidth = 1
-//        countryCodeTextField.layer.cornerRadius = 8
-//        countryCodeTextField.layer.borderColor = UIColor(red: 1.0, green: 1.0, blue: 1.0, alpha: 1).cgColor
-//        countryCodeTextField.addPadding(padding: .right(10))  // right padding
-
         phoneNumberTextField.delegate = self
-//        phoneNumberTextField.layer.borderWidth = 1
-//        phoneNumberTextField.layer.cornerRadius = 8
-//        phoneNumberTextField.layer.borderColor = UIColor(red: 1.0, green: 1.0, blue: 1.0, alpha: 1).cgColor
-//        phoneNumberTextField.addPadding(padding: .equalSpacing(14))  // equal padding right, left
-//        phoneNumberTextField.becomeFirstResponder()
 
         termSeletionButton.setImage(UIImage(named: "Ellipse 5"), for: .normal)
         termSeletionButton.setImage(UIImage(named: "Ellipse 5 (3)"), for: .selected)
@@ -62,16 +51,12 @@ class OTPSignUpViewController: UIViewController {
             let vc = self.storyboard?.instantiateViewController(withIdentifier: PrivacyPolicyViewController.identifier) as! PrivacyPolicyViewController
             self.present(vc, animated: true)
         }
-        
         termsAndConditionsLabel.termsTapped = {
             //show terms and conditions
             let vc = self.storyboard?.instantiateViewController(withIdentifier: TermsAndConditionsViewController.identifier) as! TermsAndConditionsViewController
             self.present(vc, animated: true)
         }
 
-        
-//        continueButton.isUserInteractionEnabled = false
-//        continueButton.layer.backgroundColor = UIColor(red: 0.427, green: 0.431, blue: 0.431, alpha: 1).cgColor // gray
         continueButton.disabled()
         
     }
@@ -83,21 +68,15 @@ class OTPSignUpViewController: UIViewController {
             
             if termSeletionButton.isSelected {
                 gradientBackgroundImage.image = UIImage(named: "Rectangle 161 (3)")
-//                continueButton.layer.backgroundColor = UIColor(red: 0.91, green: 0.204, blue: 0.192, alpha: 1).cgColor // red
-//                continueButton.isUserInteractionEnabled = true
                 continueButton.enabled()
             }
             else {
                 gradientBackgroundImage.image = UIImage(named: "Rectangle 161")
-//                continueButton.layer.backgroundColor = UIColor(red: 0.427, green: 0.431, blue: 0.431, alpha: 1).cgColor // gray
-//                continueButton.isUserInteractionEnabled = false
                 continueButton.disabled()
             }
         }
         else {
             gradientBackgroundImage.image = UIImage(named: "Rectangle 161")
-//            continueButton.layer.backgroundColor = UIColor(red: 0.427, green: 0.431, blue: 0.431, alpha: 1).cgColor // gray
-//            continueButton.isUserInteractionEnabled = false
             continueButton.disabled()
         }
     }
@@ -105,9 +84,7 @@ class OTPSignUpViewController: UIViewController {
     
     @IBAction func termSeletionPressed(_ sender: Any) {
         termSeletionButton.isSelected = !termSeletionButton.isSelected
-        
         inputValidation()
-        
     }
 
     

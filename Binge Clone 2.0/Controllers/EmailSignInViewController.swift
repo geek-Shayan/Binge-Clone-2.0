@@ -39,24 +39,11 @@ class EmailSignInViewController: UIViewController {
     private func setupView() {
         
         emailTextField.delegate = self
-//        emailTextField.layer.borderWidth = 1
-//        emailTextField.layer.cornerRadius = 8
-//        emailTextField.layer.borderColor = UIColor(red: 1.0, green: 1.0, blue: 1.0, alpha: 1).cgColor
-//        emailTextField.addPadding(padding: .equalSpacing(14))  // right padding
-        
         passwordTextField.delegate = self
-//        passwordTextField.layer.borderWidth = 1
-//        passwordTextField.layer.cornerRadius = 8
-//        passwordTextField.layer.borderColor = UIColor(red: 1.0, green: 1.0, blue: 1.0, alpha: 1).cgColor
-//        passwordTextField.addPadding(padding: .right(40))
-//        passwordTextField.addPadding(padding: .left(14))
-//        passwordTextField.addPadding(padding: .equalSpacing(10))  // equal padding right, left
 
         viewPasswordButton.setImage(UIImage(named: "eye"), for: .normal)
         viewPasswordButton.setImage(UIImage(named: "eye-off (3)"), for: .selected)
         
-//        signInButton.isUserInteractionEnabled = false
-//        signInButton.layer.backgroundColor = UIColor(red: 0.427, green: 0.431, blue: 0.431, alpha: 1).cgColor // gray
         signInButton.disabled()
         
     }
@@ -65,15 +52,10 @@ class EmailSignInViewController: UIViewController {
         if emailTextField.text?.isEmpty == false && passwordTextField.text?.isEmpty == false {
             
             gradientBackgroundImage.image = UIImage(named: "Rectangle 162 (3)")
-//            signInButton.layer.backgroundColor = UIColor(red: 0.91, green: 0.204, blue: 0.192, alpha: 1).cgColor // red
-//            signInButton.isUserInteractionEnabled = true
             signInButton.enabled()
-
         }
         else {
             gradientBackgroundImage.image = UIImage(named: "Rectangle 162")
-//            signInButton.layer.backgroundColor = UIColor(red: 0.427, green: 0.431, blue: 0.431, alpha: 1).cgColor // gray
-//            signInButton.isUserInteractionEnabled = false
             signInButton.disabled()
         }
     }
