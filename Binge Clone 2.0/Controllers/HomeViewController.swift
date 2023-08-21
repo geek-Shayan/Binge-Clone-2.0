@@ -12,6 +12,15 @@ class HomeViewController: UIViewController {
     static let identifier = "HomeViewController"
     static let headerKind = "headerKind"
     static let footerKind = "footerKind"
+    static let footerWithPagerKind = "footerWithPagerKind"
+    
+    private var cellHorizontalScrolled: ((_: IndexPath) -> Void)? = nil
+//    private var cellWillDisplay: ((_: IndexPath) -> Void)? = nil
+//    private var cellDidEndDisplaying: ((_: IndexPath) -> Void)? = nil
+    
+    private var cellScrollingRight: Bool = true
+    private var cellScrollingLeft: Bool = true
+
 
     private let collectionView: UICollectionView = {
 
@@ -28,6 +37,11 @@ class HomeViewController: UIViewController {
                 
                 let section = NSCollectionLayoutSection(group: group)
                 section.orthogonalScrollingBehavior = .groupPagingCentered
+                
+                let footerHeaderSize = NSCollectionLayoutSize(widthDimension: .fractionalWidth(1),heightDimension: .absolute(10))
+//                let header = NSCollectionLayoutBoundarySupplementaryItem(layoutSize: footerHeaderSize, elementKind: headerKind, alignment: .topLeading)
+                let footerWithPager = NSCollectionLayoutBoundarySupplementaryItem(layoutSize: footerHeaderSize, elementKind: footerWithPagerKind, alignment: .bottomLeading)
+                section.boundarySupplementaryItems = [footerWithPager] //, footer
                 
                 section.visibleItemsInvalidationHandler = { (items, scrollOffset, environment) in
                     items.forEach { item in
@@ -57,7 +71,7 @@ class HomeViewController: UIViewController {
                 
                 let footerHeaderSize = NSCollectionLayoutSize(widthDimension: .fractionalWidth(1.0),heightDimension: .absolute(30))
                 let header = NSCollectionLayoutBoundarySupplementaryItem(layoutSize: footerHeaderSize, elementKind: headerKind, alignment: .topLeading)
-                let footer = NSCollectionLayoutBoundarySupplementaryItem(layoutSize: footerHeaderSize, elementKind: footerKind, alignment: .bottomLeading)
+//                let footer = NSCollectionLayoutBoundarySupplementaryItem(layoutSize: footerHeaderSize, elementKind: footerKind, alignment: .bottomLeading)
                 section.boundarySupplementaryItems = [header] //, footer
                 
                 return section
@@ -157,6 +171,7 @@ class HomeViewController: UIViewController {
         
         collection.register(UINib(nibName: "HeaderCollectionReusableView", bundle: nil), forSupplementaryViewOfKind: HomeViewController.headerKind, withReuseIdentifier: HeaderCollectionReusableView.headerIdentifier)
         collection.register(UINib(nibName: "FooterCollectionReusableView", bundle: nil), forSupplementaryViewOfKind: HomeViewController.footerKind, withReuseIdentifier: FooterCollectionReusableView.footerIdentifier)
+        collection.register(UINib(nibName: "FooterWithPagerCollectionReusableView", bundle: nil), forSupplementaryViewOfKind: HomeViewController.footerWithPagerKind, withReuseIdentifier: FooterWithPagerCollectionReusableView.footerIdentifier)
                                                                                        
         return collection
     }()
@@ -168,6 +183,16 @@ class HomeViewController: UIViewController {
         setupView()
 
         loadCollectionView()
+        
+    }
+    
+    
+    override func viewDidLayoutSubviews() {
+        collectionView.frame = view.bounds
+    }
+    
+    
+    private func setupView() {
         
     }
     
@@ -185,16 +210,6 @@ class HomeViewController: UIViewController {
     }
     
     
-    private func setupView() {
-        
-    }
-    
-    
-    override func viewDidLayoutSubviews() {
-        collectionView.frame = view.bounds
-    }
-    
-    
     @IBAction func actionButtonPressed(_ sender: UIBarButtonItem) {
         let vc = UIViewController()
         vc.view.backgroundColor = .blue
@@ -204,7 +219,6 @@ class HomeViewController: UIViewController {
     @IBAction func searchButtonPressed(_ sender: UIBarButtonItem) {
         
         let searchVC = storyboard?.instantiateViewController(withIdentifier: "SearchViewController") as! SearchViewController
-//        searchVC.view.backgroundColor = .systemTeal
         navigationController?.pushViewController(searchVC, animated: false)
         
     }
@@ -242,7 +256,17 @@ extension HomeViewController: UICollectionViewDataSource {
                 
             case HomeViewController.footerKind:
                 let footer = collectionView.dequeueReusableSupplementaryView(ofKind: kind, withReuseIdentifier: FooterCollectionReusableView.footerIdentifier, for: indexPath) as! FooterCollectionReusableView
-                footer.setup(foot: homeSectionsData.sections[indexPath.section].headerFooter.footer, indicatorFlag: true)
+                footer.setup(foot: homeSectionsData.sections[indexPath.section].headerFooter.footer, indicatorFlag: false)
+                return footer
+            
+            case HomeViewController.footerWithPagerKind:
+                let footer = collectionView.dequeueReusableSupplementaryView(ofKind: kind, withReuseIdentifier: FooterWithPagerCollectionReusableView.footerIdentifier, for: indexPath) as! FooterWithPagerCollectionReusableView
+                footer.setup(indexPath: indexPath, dataSize: homeSectionsData.sections[indexPath.section].cells.count)
+            
+                cellHorizontalScrolled = { index in
+//                    print(index)
+                    footer.pageControl.currentPage = index.item
+                }
                 return footer
                 
             default :
@@ -278,4 +302,21 @@ extension HomeViewController: UICollectionViewDelegate {
         
         self.navigationController?.pushViewController(vc, animated: true)
     }
+    
+    func collectionView(_ collectionView: UICollectionView, willDisplay cell: UICollectionViewCell, forItemAt indexPath: IndexPath) {
+        cellHorizontalScrolled?(indexPath)
+//        cellWillDisplay?(indexPath)
+
+        
+//        collectionView.cellForItem(at: <#T##IndexPath#>)
+//        let ite = collectionView.indexPathsForVisibleItems
+//        print("indexPathsForVisibleItems  ", ite)
+        
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, didEndDisplaying cell: UICollectionViewCell, forItemAt indexPath: IndexPath) {
+//        cellDidEndDisplaying?(indexPath)
+
+    }
+
 }

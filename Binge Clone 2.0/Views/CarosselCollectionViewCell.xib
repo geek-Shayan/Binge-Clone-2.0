@@ -29,17 +29,11 @@
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Rectangle 35" translatesAutoresizingMaskIntoConstraints="NO" id="1bv-Bn-Q41">
                                 <rect key="frame" x="0.0" y="277" width="394" height="94"/>
                             </imageView>
-                            <pageControl opaque="NO" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="5" translatesAutoresizingMaskIntoConstraints="NO" id="dNu-o2-rFf">
-                                <rect key="frame" x="242.33333333333337" y="345" width="151.66666666666663" height="26"/>
-                                <color key="currentPageIndicatorTintColor" red="0.8862745098" green="0.1843137255" blue="0.1529411765" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                            </pageControl>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="RpZ-3i-nrK" firstAttribute="top" secondItem="wYY-zZ-0oJ" secondAttribute="top" id="89w-ty-2XB"/>
-                            <constraint firstAttribute="bottom" secondItem="dNu-o2-rFf" secondAttribute="bottom" id="8CW-gj-sWB"/>
                             <constraint firstItem="RpZ-3i-nrK" firstAttribute="leading" secondItem="wYY-zZ-0oJ" secondAttribute="leading" id="BRl-Ed-qJE"/>
-                            <constraint firstAttribute="trailing" secondItem="dNu-o2-rFf" secondAttribute="trailing" id="NpH-aD-aCK"/>
                             <constraint firstAttribute="trailing" secondItem="iYv-bE-q7w" secondAttribute="trailing" id="P9f-Yn-izB"/>
                             <constraint firstAttribute="bottom" secondItem="iYv-bE-q7w" secondAttribute="bottom" id="PAy-cT-qpC"/>
                             <constraint firstItem="iYv-bE-q7w" firstAttribute="top" secondItem="wYY-zZ-0oJ" secondAttribute="top" id="TT3-iX-UYk"/>
@@ -61,11 +55,10 @@
             </constraints>
             <size key="customSize" width="394" height="371"/>
             <connections>
-                <outlet property="carosselBackgroundView" destination="wYY-zZ-0oJ" id="dfT-rX-VMQ"/>
-                <outlet property="carosselBottomGradientImageView" destination="1bv-Bn-Q41" id="Q9y-of-uMG"/>
-                <outlet property="carosselImageView" destination="iYv-bE-q7w" id="KTy-h7-rc7"/>
-                <outlet property="carosselPageControl" destination="dNu-o2-rFf" id="e0Y-dm-gM2"/>
-                <outlet property="carosselTopGradientImageView" destination="RpZ-3i-nrK" id="Y1G-R2-Mxu"/>
+                <outlet property="carosselBackgroundView" destination="wYY-zZ-0oJ" id="pSN-C4-bya"/>
+                <outlet property="carosselBottomGradientImageView" destination="1bv-Bn-Q41" id="siV-1g-0uG"/>
+                <outlet property="carosselImageView" destination="iYv-bE-q7w" id="ZuA-iU-lT0"/>
+                <outlet property="carosselTopGradientImageView" destination="RpZ-3i-nrK" id="yYz-LO-Hg5"/>
             </connections>
             <point key="canvasLocation" x="167.93893129770993" y="-50.352112676056343"/>
         </collectionViewCell>

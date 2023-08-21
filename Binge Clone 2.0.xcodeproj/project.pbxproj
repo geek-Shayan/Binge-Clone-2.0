@@ -67,6 +67,8 @@
 		1A6355892A7F85AF006FF804 /* CreateAccountViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A6355882A7F85AF006FF804 /* CreateAccountViewController.swift */; };
 		1A977C672A7A53AD008EE975 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A977C662A7A53AD008EE975 /* Extensions.swift */; };
 		1A977C692A7A6384008EE975 /* OTPViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A977C682A7A6384008EE975 /* OTPViewController.swift */; };
+		1A9EDE6E2A91FBD9000C1D31 /* FooterWithPagerCollectionReusableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A9EDE6C2A91FBD9000C1D31 /* FooterWithPagerCollectionReusableView.swift */; };
+		1A9EDE6F2A91FBD9000C1D31 /* FooterWithPagerCollectionReusableView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1A9EDE6D2A91FBD9000C1D31 /* FooterWithPagerCollectionReusableView.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -132,6 +134,8 @@
 		1A6355882A7F85AF006FF804 /* CreateAccountViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateAccountViewController.swift; sourceTree = "<group>"; };
 		1A977C662A7A53AD008EE975 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 		1A977C682A7A6384008EE975 /* OTPViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OTPViewController.swift; sourceTree = "<group>"; };
+		1A9EDE6C2A91FBD9000C1D31 /* FooterWithPagerCollectionReusableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FooterWithPagerCollectionReusableView.swift; sourceTree = "<group>"; };
+		1A9EDE6D2A91FBD9000C1D31 /* FooterWithPagerCollectionReusableView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FooterWithPagerCollectionReusableView.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -145,6 +149,13 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1A16CD862A8DD518008F8D79 /* Custom Layouts */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = "Custom Layouts";
+			sourceTree = "<group>";
+		};
 		1A17DA142A80BB5D00128808 /* Models */ = {
 			isa = PBXGroup;
 			children = (
@@ -162,6 +173,7 @@
 			children = (
 				1A33E19A2A84B7BF0008FC9F /* Custom Cells */,
 				1A189BA12A821B6800455B98 /* Custom Components */,
+				1A16CD862A8DD518008F8D79 /* Custom Layouts */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -280,8 +292,8 @@
 				1A33E1C42A84EA8D0008FC9F /* GenreCollectionViewCell.xib */,
 				1A33E1BF2A84E87E0008FC9F /* TitleCollectionViewCell.swift */,
 				1A33E1C02A84E87E0008FC9F /* TitleCollectionViewCell.xib */,
-				1A33E1BB2A84E69A0008FC9F /* FilterCollectionViewCell.swift */,
 				1A33E1BC2A84E69A0008FC9F /* FilterCollectionViewCell.xib */,
+				1A33E1BB2A84E69A0008FC9F /* FilterCollectionViewCell.swift */,
 				1A33E19B2A84B8060008FC9F /* CarosselCollectionViewCell.swift */,
 				1A33E19C2A84B8060008FC9F /* CarosselCollectionViewCell.xib */,
 				1A33E1D52A84F2F40008FC9F /* TVCollectionViewCell.swift */,
@@ -305,6 +317,8 @@
 				1A33E1A02A84D0F90008FC9F /* HeaderCollectionReusableView.xib */,
 				1A33E1C72A84EC9C0008FC9F /* FooterCollectionReusableView.swift */,
 				1A33E1C82A84EC9C0008FC9F /* FooterCollectionReusableView.xib */,
+				1A9EDE6C2A91FBD9000C1D31 /* FooterWithPagerCollectionReusableView.swift */,
+				1A9EDE6D2A91FBD9000C1D31 /* FooterWithPagerCollectionReusableView.xib */,
 			);
 			name = "Header Footer";
 			sourceTree = "<group>";
@@ -367,6 +381,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1A9EDE6F2A91FBD9000C1D31 /* FooterWithPagerCollectionReusableView.xib in Resources */,
 				1A1DA4B42A6916F7004B27ED /* LaunchScreen.storyboard in Resources */,
 				1A33E1C22A84E87E0008FC9F /* TitleCollectionViewCell.xib in Resources */,
 				1A33E1AE2A84DCBE0008FC9F /* CategoryCollectionViewCell.xib in Resources */,
@@ -399,6 +414,7 @@
 				1A33E1AD2A84DCBE0008FC9F /* CategoryCollectionViewCell.swift in Sources */,
 				1A6355892A7F85AF006FF804 /* CreateAccountViewController.swift in Sources */,
 				1A33E1872A84A14D0008FC9F /* SearchesData.swift in Sources */,
+				1A9EDE6E2A91FBD9000C1D31 /* FooterWithPagerCollectionReusableView.swift in Sources */,
 				1A33E1B52A84E1570008FC9F /* NoResultCollectionViewCell.swift in Sources */,
 				1A33E1752A849F610008FC9F /* Sections.swift in Sources */,
 				1A321A7C2A82445200799B25 /* ShadowButton.swift in Sources */,

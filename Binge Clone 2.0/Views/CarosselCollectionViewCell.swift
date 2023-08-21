@@ -16,9 +16,7 @@ class CarosselCollectionViewCell: UICollectionViewCell {
     @IBOutlet weak var carosselTopGradientImageView: UIImageView!
     
     @IBOutlet weak var carosselBottomGradientImageView: UIImageView!
-    
-    @IBOutlet weak var carosselPageControl: UIPageControl!
-    
+        
     static let identifier = "CarosselCollectionViewCell"
     
     override func awakeFromNib() {
@@ -30,12 +28,12 @@ class CarosselCollectionViewCell: UICollectionViewCell {
     
     private func setupView() {
 //        carosselBackgroundView.backgroundColor = .red
-        carosselPageControl.currentPage = 0
+//        carosselPageControl.currentPage = 0
     }
     
     func setup(image: String, indexPath: IndexPath, dataSize: Int) {
         carosselImageView.image = UIImage(named: image)
-        carosselPageControl.currentPage = indexPath.item
-        carosselPageControl.numberOfPages = dataSize
+//        carosselPageControl.currentPage = indexPath.item
+//        carosselPageControl.numberOfPages = dataSize
     }
 }
