@@ -7,12 +7,21 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1A095CB32A936CD8005F8E81 /* UITextField+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A095CB22A936CD8005F8E81 /* UITextField+Extension.swift */; };
+		1A095CB52A936D12005F8E81 /* UINavigationBar+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A095CB42A936D12005F8E81 /* UINavigationBar+Extension.swift */; };
+		1A095CB72A936D73005F8E81 /* UITabBar+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A095CB62A936D73005F8E81 /* UITabBar+Extension.swift */; };
+		1A095CB92A936DA6005F8E81 /* UIView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A095CB82A936DA6005F8E81 /* UIView+Extension.swift */; };
+		1A095CBB2A936DE0005F8E81 /* UICollectionView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A095CBA2A936DE0005F8E81 /* UICollectionView+Extension.swift */; };
+		1A095CBD2A936E15005F8E81 /* UIViewController+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A095CBC2A936E15005F8E81 /* UIViewController+Extension.swift */; };
+		1A095CBF2A936E55005F8E81 /* UITapGestureRecognizer+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A095CBE2A936E55005F8E81 /* UITapGestureRecognizer+Extension.swift */; };
 		1A17DA132A80B3CF00128808 /* OTPSignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A17DA122A80B3CF00128808 /* OTPSignUpViewController.swift */; };
 		1A1DA4A82A6916F5004B27ED /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A1DA4A72A6916F5004B27ED /* AppDelegate.swift */; };
 		1A1DA4AA2A6916F5004B27ED /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A1DA4A92A6916F5004B27ED /* SceneDelegate.swift */; };
 		1A1DA4AF2A6916F5004B27ED /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1A1DA4AD2A6916F5004B27ED /* Main.storyboard */; };
 		1A1DA4B12A6916F7004B27ED /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1A1DA4B02A6916F7004B27ED /* Assets.xcassets */; };
 		1A1DA4B42A6916F7004B27ED /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1A1DA4B22A6916F7004B27ED /* LaunchScreen.storyboard */; };
+		1A2653BE2A94C62400783D15 /* AppLayouts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A2653BD2A94C62400783D15 /* AppLayouts.swift */; };
+		1A2653C22A94CB1E00783D15 /* SupplementraryHeaderFooterKind.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A2653C12A94CB1E00783D15 /* SupplementraryHeaderFooterKind.swift */; };
 		1A321A7C2A82445200799B25 /* ShadowButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A321A7B2A82445200799B25 /* ShadowButton.swift */; };
 		1A321A7E2A82492E00799B25 /* DOBTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A321A7D2A82492E00799B25 /* DOBTextField.swift */; };
 		1A321A802A825AFF00799B25 /* BasicTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A321A7F2A825AFF00799B25 /* BasicTextField.swift */; };
@@ -65,13 +74,19 @@
 		1A5E2F482A8CB495001A91DA /* PrivacyPolicyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A5E2F472A8CB495001A91DA /* PrivacyPolicyViewController.swift */; };
 		1A6355872A7F84A8006FF804 /* EmailSignInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A6355862A7F84A8006FF804 /* EmailSignInViewController.swift */; };
 		1A6355892A7F85AF006FF804 /* CreateAccountViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A6355882A7F85AF006FF804 /* CreateAccountViewController.swift */; };
-		1A977C672A7A53AD008EE975 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A977C662A7A53AD008EE975 /* Extensions.swift */; };
 		1A977C692A7A6384008EE975 /* OTPViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A977C682A7A6384008EE975 /* OTPViewController.swift */; };
 		1A9EDE6E2A91FBD9000C1D31 /* FooterWithPagerCollectionReusableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A9EDE6C2A91FBD9000C1D31 /* FooterWithPagerCollectionReusableView.swift */; };
 		1A9EDE6F2A91FBD9000C1D31 /* FooterWithPagerCollectionReusableView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1A9EDE6D2A91FBD9000C1D31 /* FooterWithPagerCollectionReusableView.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1A095CB22A936CD8005F8E81 /* UITextField+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITextField+Extension.swift"; sourceTree = "<group>"; };
+		1A095CB42A936D12005F8E81 /* UINavigationBar+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UINavigationBar+Extension.swift"; sourceTree = "<group>"; };
+		1A095CB62A936D73005F8E81 /* UITabBar+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITabBar+Extension.swift"; sourceTree = "<group>"; };
+		1A095CB82A936DA6005F8E81 /* UIView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Extension.swift"; sourceTree = "<group>"; };
+		1A095CBA2A936DE0005F8E81 /* UICollectionView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UICollectionView+Extension.swift"; sourceTree = "<group>"; };
+		1A095CBC2A936E15005F8E81 /* UIViewController+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Extension.swift"; sourceTree = "<group>"; };
+		1A095CBE2A936E55005F8E81 /* UITapGestureRecognizer+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITapGestureRecognizer+Extension.swift"; sourceTree = "<group>"; };
 		1A17DA122A80B3CF00128808 /* OTPSignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OTPSignUpViewController.swift; sourceTree = "<group>"; };
 		1A1DA4A42A6916F5004B27ED /* Binge Clone 2.0.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Binge Clone 2.0.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		1A1DA4A72A6916F5004B27ED /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -80,6 +95,8 @@
 		1A1DA4B02A6916F7004B27ED /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1A1DA4B32A6916F7004B27ED /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1A1DA4B52A6916F7004B27ED /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1A2653BD2A94C62400783D15 /* AppLayouts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppLayouts.swift; sourceTree = "<group>"; };
+		1A2653C12A94CB1E00783D15 /* SupplementraryHeaderFooterKind.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SupplementraryHeaderFooterKind.swift; sourceTree = "<group>"; };
 		1A321A7B2A82445200799B25 /* ShadowButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShadowButton.swift; sourceTree = "<group>"; };
 		1A321A7D2A82492E00799B25 /* DOBTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DOBTextField.swift; sourceTree = "<group>"; };
 		1A321A7F2A825AFF00799B25 /* BasicTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BasicTextField.swift; sourceTree = "<group>"; };
@@ -132,7 +149,6 @@
 		1A5E2F472A8CB495001A91DA /* PrivacyPolicyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrivacyPolicyViewController.swift; sourceTree = "<group>"; };
 		1A6355862A7F84A8006FF804 /* EmailSignInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmailSignInViewController.swift; sourceTree = "<group>"; };
 		1A6355882A7F85AF006FF804 /* CreateAccountViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateAccountViewController.swift; sourceTree = "<group>"; };
-		1A977C662A7A53AD008EE975 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 		1A977C682A7A6384008EE975 /* OTPViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OTPViewController.swift; sourceTree = "<group>"; };
 		1A9EDE6C2A91FBD9000C1D31 /* FooterWithPagerCollectionReusableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FooterWithPagerCollectionReusableView.swift; sourceTree = "<group>"; };
 		1A9EDE6D2A91FBD9000C1D31 /* FooterWithPagerCollectionReusableView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FooterWithPagerCollectionReusableView.xib; sourceTree = "<group>"; };
@@ -159,6 +175,8 @@
 		1A17DA142A80BB5D00128808 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				1A2653BD2A94C62400783D15 /* AppLayouts.swift */,
+				1A2653C12A94CB1E00783D15 /* SupplementraryHeaderFooterKind.swift */,
 				1A33E16E2A849EF40008FC9F /* CellDataType.swift */,
 				1A33E1702A849F2D0008FC9F /* SupplementaryDataType.swift */,
 				1A33E1722A849F470008FC9F /* SectionDataType.swift */,
@@ -199,7 +217,13 @@
 		1A17DA182A80BBA700128808 /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
-				1A977C662A7A53AD008EE975 /* Extensions.swift */,
+				1A095CBC2A936E15005F8E81 /* UIViewController+Extension.swift */,
+				1A095CB82A936DA6005F8E81 /* UIView+Extension.swift */,
+				1A095CBA2A936DE0005F8E81 /* UICollectionView+Extension.swift */,
+				1A095CB22A936CD8005F8E81 /* UITextField+Extension.swift */,
+				1A095CBE2A936E55005F8E81 /* UITapGestureRecognizer+Extension.swift */,
+				1A095CB42A936D12005F8E81 /* UINavigationBar+Extension.swift */,
+				1A095CB62A936D73005F8E81 /* UITabBar+Extension.swift */,
 			);
 			name = Extensions;
 			sourceTree = "<group>";
@@ -292,8 +316,8 @@
 				1A33E1C42A84EA8D0008FC9F /* GenreCollectionViewCell.xib */,
 				1A33E1BF2A84E87E0008FC9F /* TitleCollectionViewCell.swift */,
 				1A33E1C02A84E87E0008FC9F /* TitleCollectionViewCell.xib */,
-				1A33E1BC2A84E69A0008FC9F /* FilterCollectionViewCell.xib */,
 				1A33E1BB2A84E69A0008FC9F /* FilterCollectionViewCell.swift */,
+				1A33E1BC2A84E69A0008FC9F /* FilterCollectionViewCell.xib */,
 				1A33E19B2A84B8060008FC9F /* CarosselCollectionViewCell.swift */,
 				1A33E19C2A84B8060008FC9F /* CarosselCollectionViewCell.xib */,
 				1A33E1D52A84F2F40008FC9F /* TVCollectionViewCell.swift */,
@@ -421,14 +445,15 @@
 				1A33CE7D2A7BB0D400154F7C /* UserInfoViewController.swift in Sources */,
 				1A321A802A825AFF00799B25 /* BasicTextField.swift in Sources */,
 				1A33E1D72A84F2F40008FC9F /* TVCollectionViewCell.swift in Sources */,
-				1A977C672A7A53AD008EE975 /* Extensions.swift in Sources */,
 				1A33E1992A84AF570008FC9F /* SearchViewController.swift in Sources */,
 				1A17DA132A80B3CF00128808 /* OTPSignUpViewController.swift in Sources */,
 				1A1DA4A82A6916F5004B27ED /* AppDelegate.swift in Sources */,
 				1A33E1C12A84E87E0008FC9F /* TitleCollectionViewCell.swift in Sources */,
 				1A33E1892A84A2570008FC9F /* HomeViewController.swift in Sources */,
+				1A095CB32A936CD8005F8E81 /* UITextField+Extension.swift in Sources */,
 				1A33E1C52A84EA8D0008FC9F /* GenreCollectionViewCell.swift in Sources */,
 				1A33E17F2A84A0930008FC9F /* LiveTvSectionsData.swift in Sources */,
+				1A095CB92A936DA6005F8E81 /* UIView+Extension.swift in Sources */,
 				1A33E1952A84AEA50008FC9F /* CategoriesViewController.swift in Sources */,
 				1A5E2F462A8CB416001A91DA /* TermsAndConditionsViewController.swift in Sources */,
 				1A33E1792A849FD00008FC9F /* Actions.swift in Sources */,
@@ -436,11 +461,14 @@
 				1A33E1712A849F2D0008FC9F /* SupplementaryDataType.swift in Sources */,
 				1A33E1912A84AD780008FC9F /* ProfileViewController.swift in Sources */,
 				1A33E18B2A84A2EC0008FC9F /* LiveTvViewController.swift in Sources */,
+				1A095CBB2A936DE0005F8E81 /* UICollectionView+Extension.swift in Sources */,
 				1A33E1C92A84EC9C0008FC9F /* FooterCollectionReusableView.swift in Sources */,
 				1A33E1732A849F470008FC9F /* SectionDataType.swift in Sources */,
 				1A33E1972A84AEFA0008FC9F /* CategoryViewController.swift in Sources */,
+				1A2653BE2A94C62400783D15 /* AppLayouts.swift in Sources */,
 				1A33E18D2A84AC920008FC9F /* OriginalsViewController.swift in Sources */,
 				1A977C692A7A6384008EE975 /* OTPViewController.swift in Sources */,
+				1A2653C22A94CB1E00783D15 /* SupplementraryHeaderFooterKind.swift in Sources */,
 				1A33E17D2A84A0550008FC9F /* HomeSectionsData.swift in Sources */,
 				1A497EB52A8A243600D49C78 /* OTPTextField.swift in Sources */,
 				1A33E16F2A849EF40008FC9F /* CellDataType.swift in Sources */,
@@ -448,10 +476,14 @@
 				1A33E1932A84AE140008FC9F /* GenreViewController.swift in Sources */,
 				1A33E1A12A84D0F90008FC9F /* HeaderCollectionReusableView.swift in Sources */,
 				1A321A7E2A82492E00799B25 /* DOBTextField.swift in Sources */,
+				1A095CBF2A936E55005F8E81 /* UITapGestureRecognizer+Extension.swift in Sources */,
 				1A5E2F442A8C97AF001A91DA /* TermsAndConditionsLabel.swift in Sources */,
 				1A1DA4AA2A6916F5004B27ED /* SceneDelegate.swift in Sources */,
+				1A095CB72A936D73005F8E81 /* UITabBar+Extension.swift in Sources */,
 				1A5E2F482A8CB495001A91DA /* PrivacyPolicyViewController.swift in Sources */,
+				1A095CBD2A936E15005F8E81 /* UIViewController+Extension.swift in Sources */,
 				1A33E1BD2A84E69A0008FC9F /* FilterCollectionViewCell.swift in Sources */,
+				1A095CB52A936D12005F8E81 /* UINavigationBar+Extension.swift in Sources */,
 				1A33E1852A84A1310008FC9F /* ActionsData.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -606,6 +638,7 @@
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -633,6 +666,7 @@
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

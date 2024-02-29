@@ -20,6 +20,8 @@ class HomeViewController: UIViewController {
     
     private var cellScrollingRight: Bool = true
     private var cellScrollingLeft: Bool = true
+    
+    private var pageControls = UIPageControl()
 
 
     private let collectionView: UICollectionView = {
@@ -193,6 +195,14 @@ class HomeViewController: UIViewController {
     
     
     private func setupView() {
+        pageControls.currentPage = 0
+        pageControls.backgroundColor = .systemPink
+        pageControls.tintColor = .red
+        
+//        pageControls.currentPage = indexPath.item
+        pageControls.numberOfPages = 10
+        
+        pageControls.frame = CGRect(x: 0, y: 0, width: 100, height: 100)
         
     }
     
@@ -281,6 +291,14 @@ extension HomeViewController: UICollectionViewDataSource {
         if indexPath.section == 0 {
             let cell = collectionView.dequeueReusableCell(withReuseIdentifier: CarosselCollectionViewCell.identifier, for: indexPath) as! CarosselCollectionViewCell
             cell.setup(image: homeSectionsData.sections[indexPath.section].cells[indexPath.item].image ?? "image", indexPath: indexPath, dataSize: homeSectionsData.sections[indexPath.section].cells.count)
+            
+////            pageControls.currentPage = 0
+//            pageControls.currentPage = indexPath.item
+//            pageControls.numberOfPages = homeSectionsData.sections[indexPath.section].cells.count
+//            pageControls.frame = CGRect(x: cell.frame.midX, y: cell.frame.midY, width: 200, height: 100)
+//
+//            cell.addSubview(pageControls)
+
             return cell
         }
         
@@ -310,7 +328,7 @@ extension HomeViewController: UICollectionViewDelegate {
         
 //        collectionView.cellForItem(at: <#T##IndexPath#>)
 //        let ite = collectionView.indexPathsForVisibleItems
-//        print("indexPathsForVisibleItems  ", ite)
+//        print("indexPathsForVisibleItems  ", ite) 
         
     }
     
